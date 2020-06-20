@@ -11,7 +11,7 @@ O objetivo deste respositório é guardar os desafios e outros exercícios do La
 Até o momento o destaque fica por conta do desafio 2-2, que apresenta uma página **Sobre** com informações da Rocketseat. O objetivo do desafio é exercitar o HTML e o CSS.
 
 <h1 align="center">
-    <img src="images/sobre.jpg" alt="Página sobre das Rocketseat">
+    <img src="images/sobre.JPG" alt="Página sobre das Rocketseat">
 </h1>
 
 ## Licença
