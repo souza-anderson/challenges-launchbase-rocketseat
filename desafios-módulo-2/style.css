@@ -1,7 +1,8 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap";
 
 :root {
-    --color-purple: rgb(149, 126, 226);
+    --color-purple: rgb(113, 89, 193);
+    --color-black: #282828;
 }
 
 * {
@@ -11,7 +12,7 @@
 }
 
 body {
-    background: #282828;
+    background: var(--color-black);
 }
 
 header {
@@ -84,3 +85,91 @@ header {
     color: var(--color-purple);
 }
 
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 8vh auto;
+    max-width: 900px;
+    gap: 15px;
+}
+
+.cards .card .card-logo {
+    text-align: center;
+}
+
+.card {
+    color: white;
+    border-radius: 20px;
+    background-color: var(--color-black);
+    filter: brightness(80%);
+    padding: 50px 0;
+    cursor: pointer;
+}
+
+.card-title,
+.card-info {
+    padding: 24px;
+}
+
+
+.card-title p {
+    font-size: 17px;
+}
+
+.card-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-price {
+    background-color: var(--color-black);
+    filter: brightness(80%);
+    padding: 8px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/*=== MODAL ESCONDIDO===*/
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    position: relative;
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+}
+
+.modal .close-modal {
+    position: absolute;
+    right: 0;
+    padding: 8px 8px;
+    cursor: pointer;
+}
+
+.modal .modal-content {
+    height: 100%;
+}
+
+/*=== MODAL ATIVO ===*/
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 6%;
+}
