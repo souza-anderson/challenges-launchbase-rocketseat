@@ -11,7 +11,8 @@ module.exports = [
         image: "https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg",
         description: "Para programadores iniciantes e querem entrar na área do jeito certo.",
         modules: "7 módulos",
-        price: "Pago"
+        price: "Pago",
+        featured: true
     },
     {
         id: "gostack",

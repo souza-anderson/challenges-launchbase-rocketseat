@@ -194,3 +194,19 @@ iframe {
     position: absolute;
     top: 6%;
 }
+
+/* === FEATURED ===*/
+
+.featured {
+    color: yellow;
+    background: rgb(161, 58, 58);
+    position: absolute;
+    right: 44px;
+    border-radius: 20px;
+    top: -13px;
+    padding: 5px 8px;
+}
+
+.card.wrapper-featured {
+    position: relative;
+}
