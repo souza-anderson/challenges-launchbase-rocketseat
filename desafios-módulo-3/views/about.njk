@@ -6,21 +6,21 @@
 
 {% block content %}
     <div id="wrapper">
-        <img src="https://rocketseat.com.br/static/images/logo-rocketseat.svg" alt="">
-        <h1>Rocketseat</h1>
-        <h2>As melhores tecnologias em programação, direto ao ponto e do jeito certo.</h2>
-        <p>No meio de tanta informação e da quantidade de ferramentas que surgem todos os dias, você precisa de alguém que te leve na direção certa.</p>
+        <img src="{{ about.image }}" alt="">
+        <h1>{{ about.title1 }}</h1>
+        <h2>{{ about.title2 }}</h2>
+        <p>{{ about.description }}</p>
 
         <ul>
-            <li>React</li>
-            <li>NodeJS</li>
-            <li>React Native</li>
+            {% for item in about.technologies %}
+                <li>{{ item }}</li>
+            {% endfor %}
         </ul>
 
         <div class="links links-footer">
-            <a href="https://github.com/rocketseat" target="_blank">Github</a>
-            <a href="https://www.instagram.com/rocketseat_oficial/" target="_blank">Instragram</a>
-            <a href="https://www.facebook.com/rocketseat" target="_blank">Facebook</a>
+            {% for link in about.links %}
+                <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+            {% endfor %}          
         </div>
     </div>
 {% endblock content %}

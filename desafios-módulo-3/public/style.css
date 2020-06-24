@@ -66,6 +66,12 @@ header {
     font-style: italic;
 }
 
+#wrapper p a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
 #wrapper ul {
     margin-top: 20px;
     text-align: left;
@@ -98,6 +104,7 @@ header {
 }
 
 .card {
+    display: grid;
     color: white;
     border-radius: 20px;
     background-color: var(--color-black);
@@ -119,6 +126,7 @@ header {
 .card-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .card-price {
