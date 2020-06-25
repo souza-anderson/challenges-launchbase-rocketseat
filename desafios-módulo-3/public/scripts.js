@@ -3,10 +3,9 @@ const cards = document.querySelectorAll('.card');
 
 for (let card of cards) {
     card.addEventListener('click', function() {
-        modalOverlay.classList.add('active');
         const pageId = card.getAttribute("id");
+        window.location.href = `/courses/${pageId}`;
 
-        modalOverlay.querySelector("iframe").src = `https://rocketseat.com.br/${pageId}`;
     });
 }
 
